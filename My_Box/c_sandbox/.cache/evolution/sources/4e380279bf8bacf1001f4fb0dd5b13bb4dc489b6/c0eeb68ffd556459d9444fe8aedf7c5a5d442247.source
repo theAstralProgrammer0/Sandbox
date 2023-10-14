@@ -1,0 +1,27 @@
+[Data Source]
+DisplayName=1 Thing that gives you joy (1 hour/2 hours)
+Enabled=true
+Parent=4e380279bf8bacf1001f4fb0dd5b13bb4dc489b6
+
+[Authentication]
+Host=www.google.com
+Method=OAuth2
+Port=0
+ProxyUid=system-proxy
+RememberPassword=true
+User=tdaisioso@gmail.com
+CredentialName=
+IsExternal=false
+
+[Resource]
+Identity=gtasks::UVh1dVZNdEFoTDFhV2h6cg
+
+[Alarms]
+IncludeMe=false
+LastNotified=
+
+[Task List]
+BackendName=gtasks
+Color=#becedd
+Selected=true
+Order=0

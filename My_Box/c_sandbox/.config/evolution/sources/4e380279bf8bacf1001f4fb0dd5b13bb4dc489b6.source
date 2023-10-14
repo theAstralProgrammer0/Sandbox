@@ -1,0 +1,45 @@
+[Data Source]
+DisplayName=tdaisioso@gmail.com
+Enabled=true
+Parent=
+
+[Authentication]
+Host=
+Method=OAuth2
+Port=0
+ProxyUid=system-proxy
+RememberPassword=true
+User=
+CredentialName=
+IsExternal=true
+
+[Collection]
+BackendName=google
+CalendarEnabled=true
+ContactsEnabled=true
+Identity=tdaisioso@gmail.com
+MailEnabled=true
+AllowSourcesRename=false
+CalendarUrl=
+ContactsUrl=
+
+[GNOME Online Accounts]
+AccountId=account_1696829471_0
+CalendarUrl=https://apidata.googleusercontent.com/caldav/v2/tdaisioso@gmail.com/user
+ContactsUrl=https://www.googleapis.com/.well-known/carddav
+Name=
+Address=tdaisioso@gmail.com
+
+[WebDAV Backend]
+AvoidIfmatch=false
+CalendarAutoSchedule=false
+Color=
+DisplayName=
+EmailAddress=
+ResourcePath=
+ResourceQuery=
+SslTrust=
+Order=4294967295
+
+[Security]
+Method=none

@@ -1,0 +1,48 @@
+[Data Source]
+DisplayName=Holidays in Nigeria
+Enabled=true
+Parent=4e380279bf8bacf1001f4fb0dd5b13bb4dc489b6
+
+[Authentication]
+Host=apidata.googleusercontent.com
+Method=OAuth2
+Port=443
+ProxyUid=system-proxy
+RememberPassword=true
+User=tdaisioso@gmail.com
+CredentialName=
+IsExternal=false
+
+[Security]
+Method=tls
+
+[Resource]
+Identity=events::https://apidata.googleusercontent.com/caldav/v2/cln2srj74dk6ur39chgnig37e9nnas1eeon66obccln68obi5pjmurr7dhiisorfdk%40virtual/events/
+
+[WebDAV Backend]
+AvoidIfmatch=false
+CalendarAutoSchedule=true
+Color=#16a765
+DisplayName=Holidays in Nigeria
+EmailAddress=
+ResourcePath=/caldav/v2/cln2srj74dk6ur39chgnig37e9nnas1eeon66obccln68obi5pjmurr7dhiisorfdk%40virtual/events/
+ResourceQuery=
+SslTrust=
+Order=4294967295
+
+[Calendar]
+BackendName=caldav
+Color=#16a765
+Selected=true
+Order=0
+
+[Alarms]
+IncludeMe=true
+LastNotified=2023-10-09T05:31:16.725799Z
+
+[Offline]
+StaySynchronized=true
+
+[Refresh]
+Enabled=true
+IntervalMinutes=30

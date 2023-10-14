@@ -1,0 +1,35 @@
+[Data Source]
+DisplayName=Address Book
+Enabled=true
+Parent=4e380279bf8bacf1001f4fb0dd5b13bb4dc489b6
+
+[Authentication]
+Host=www.googleapis.com
+Method=OAuth2
+Port=443
+ProxyUid=system-proxy
+RememberPassword=true
+User=tdaisioso@gmail.com
+CredentialName=
+IsExternal=false
+
+[Security]
+Method=tls
+
+[Resource]
+Identity=contacts::https://www.googleapis.com/carddav/v1/principals/tdaisioso@gmail.com/lists/default/
+
+[WebDAV Backend]
+AvoidIfmatch=false
+CalendarAutoSchedule=false
+Color=
+DisplayName=Address Book
+EmailAddress=
+ResourcePath=/carddav/v1/principals/tdaisioso@gmail.com/lists/default/
+ResourceQuery=
+SslTrust=
+Order=4294967295
+
+[Address Book]
+BackendName=carddav
+Order=0

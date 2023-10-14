@@ -1,0 +1,27 @@
+[Data Source]
+DisplayName=My Tasks
+Enabled=true
+Parent=4e380279bf8bacf1001f4fb0dd5b13bb4dc489b6
+
+[Authentication]
+Host=www.google.com
+Method=OAuth2
+Port=0
+ProxyUid=system-proxy
+RememberPassword=true
+User=tdaisioso@gmail.com
+CredentialName=
+IsExternal=false
+
+[Resource]
+Identity=gtasks::MDA5ODMxNzIxNzQyNzkyODc4OTM6MDow
+
+[Alarms]
+IncludeMe=false
+LastNotified=
+
+[Task List]
+BackendName=gtasks
+Color=#becedd
+Selected=true
+Order=0

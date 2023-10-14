@@ -1,0 +1,29 @@
+[Data Source]
+DisplayName=tdaisioso@gmail.com
+Enabled=true
+Parent=4e380279bf8bacf1001f4fb0dd5b13bb4dc489b6
+
+[Mail Submission]
+SentFolder=folder://local/Sent
+TransportUid=b57906134c8bbb3af5c038cb618133cfbbb1b4bb
+RepliesToOriginFolder=false
+UseSentFolder=true
+
+[Mail Composition]
+Bcc=
+Cc=
+DraftsFolder=folder://local/Drafts
+ReplyStyle=default
+SignImip=true
+TemplatesFolder=
+StartBottom=inconsistent
+TopSignature=inconsistent
+Language=
+
+[Mail Identity]
+Address=tdaisioso@gmail.com
+Aliases=
+Name=
+Organization=
+ReplyTo=
+SignatureUid=none
