@@ -1,0 +1,3 @@
+#!/bin/bash
+shopt -s extglob		#shopt - built-in command in shell used to enable or disable shell options -s to set extglob is extended globbing
+mv !(c|d) c 			#move all files and folders into the c dir except the c dir itself and a dir d 
