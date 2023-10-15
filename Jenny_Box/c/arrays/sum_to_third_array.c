@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "c_array.h"
 #define ARRAY_SIZE 5
 
 /**
