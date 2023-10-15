@@ -37,7 +37,7 @@ int main(void)
 			printf("%d]\n\n", matrix[0][j]);
 		s_row0 += matrix[0][j];
 	}
-	printf(" Sum of row 1 = ", s_row0);
+	printf(" Sum of row 1 = %d", s_row0);
 	
 	putchar('[');
 	for (j = 0; j < ARRAY_COL_SIZE; j++)
@@ -48,7 +48,7 @@ int main(void)
 			printf("%d]\n\n", matrix[1][j]);
 		s_row1 += matrix[1][j];
 	}
-	printf(" Sum of row 2 = ", s_row1);
+	printf(" Sum of row 2 = %d", s_row1);
 
 	putchar('[');
 	for (j = 0; j < ARRAY_COL_SIZE; j++)
@@ -59,7 +59,7 @@ int main(void)
 			printf("%d]\n\n", matrix[1][j]);
 		s_row2 += matrix[2][j];
 	}
-	printf(" Sum of row 3 = ", s_row2);
+	printf(" Sum of row 3 = %d", s_row2);
 
 	putchar('[');
 	for (j = 0; j < ARRAY_COL_SIZE; j++)
@@ -70,7 +70,7 @@ int main(void)
 			printf("%d]\n\n", matrix[2][j]);
 		s_row3 += matrix[3][j];
 	}
-	printf(" Sum of row 4 = ", s_row3);
+	printf(" Sum of row 4 = %d", s_row3);
 	
 	putchar('[');
 	for (j = 0; j < ARRAY_COL_SIZE; j++)
@@ -81,7 +81,7 @@ int main(void)
 			printf("%d]\n\n", matrix[3][j]);
 		s_row4 += matrix[4][j];
 	}
-	printf(" Sum of row 5 = ", s_row4);
+	printf(" Sum of row 5 = %d", s_row4);
 	
 	putchar('[');
 	for (j = 0; j < ARRAY_COL_SIZE; j++)
@@ -101,22 +101,22 @@ int main(void)
 
 	for (i = 0; i < ARRAY_ROW_SIZE; i++)
 		s_col0 += matrix[i][0];
-	printf("\nSum of column 1 = ", s_col0);
+	printf("\nSum of column 1 = %d", s_col0);
 
 	for (i = 0; i < ARRAY_ROW_SIZE; i++)
 		s_col1 += matrix[i][1];
-	printf("\nSum of column 2 = ", s_col1);
+	printf("\nSum of column 2 = %d", s_col1);
 
 	for (i = 0; i < ARRAY_ROW_SIZE; i++)
 		s_col2 += matrix[i][2];
-	printf("\nSum of column 3 = ", s_col2);
+	printf("\nSum of column 3 = %d", s_col2);
 
 	for (i = 0; i < ARRAY_ROW_SIZE; i++)
 		s_col3 += matrix[i][3];
-	printf("\nSum of column 4 = ", s_col3);
+	printf("\nSum of column 4 = %d", s_col3);
 	for (i = 0; i < ARRAY_ROW_SIZE; i++)
 		s_col4 += matrix[i][4];
-	printf("\nSum of column 5 = ", s_col4);
+	printf("\nSum of column 5 = %d", s_col4);
 
 	printf("Ths sum of all the elements in the array is: %d\n",  sum);
 	return (0);
