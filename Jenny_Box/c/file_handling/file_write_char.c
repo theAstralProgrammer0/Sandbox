@@ -1,6 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+  * main - Entry Point
+  *
+  * Description: This function asks the user to write a character into a file
+  * and provides them with a choice to either continue writing or stop writing
+  *
+  * Return: Always 0 (Success), 98 Failure
+  */
+
 int main(void)
 {
 	char ch, choice;
