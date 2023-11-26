@@ -1,1 +1,1 @@
-eradicate the newline character.
+Newst text echoed
