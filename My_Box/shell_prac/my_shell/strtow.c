@@ -88,7 +88,7 @@ char **strtow(char *str)
 
 int main(void)
 {
-  char *string, **sp;
+  char *string, **sp; 
   int words = 0;
   string = "   ALX  SCH ";
   sp = strtow(string);

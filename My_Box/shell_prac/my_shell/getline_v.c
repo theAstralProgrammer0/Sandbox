@@ -57,24 +57,3 @@ ssize_t getline_v(char **lineptr, size_t *n)
 	*n = size;
 	return (size);
 }
-
-int main(void)
-{
-	char *input;
-	size_t n;
-	ssize_t nread;
-
-	while (1)
-	{
-		nread = getline_v(&input, &n);
-		if (nread == -1)
-		{
-			free(input);
-			exit(EXIT_FAILURE);
-		}
-		printf("This is the string: %s\n", input);
-		printf("This is the size: %ld\n", n);
-	}
-	free(input);
-	return (0);
-}
