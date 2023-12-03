@@ -1,3 +1,5 @@
+#include <stddef.h>
+
 size_t str_arr_size(char **str_arr)
 {
 	size_t count = 0;

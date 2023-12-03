@@ -1,16 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stddef.h>
+#include "shell.h"
 
-void _free(void **ptr, int iter)
+void free_str_arr(char **dptr)
 {
-	while (ptr)
+	while (*dptr)
 	{
-		if (ptr != NULL && *ptr != NULL)
-		{
-			free(*ptr);
-			*ptr = NULL;
-		}
-		++ptr;
+		free(*dptr);
+		*dptr = NULL;
+		++dptr;
 	}
 }

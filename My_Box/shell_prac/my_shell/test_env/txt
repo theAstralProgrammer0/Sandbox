@@ -1,2 +1,13 @@
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include "shell.h"
+head -4 shell.c
+head -4 shell.c
+#include <stdio.h>
+#include <stdlib.h>
+
+#include <stdio.h>\n#include <stdlib.h>\n
+#include <stdio.h>/\n#include <stdlib.h>/\n
 #!/bin/bash
 echo pigslut

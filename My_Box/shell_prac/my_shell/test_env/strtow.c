@@ -2,103 +2,62 @@
 #include <stdio.h>
 #include <stddef.h>
 
-void _free(void **ptr, int iter)
-{
-	while (ptr)
-	{
-		if (ptr != NULL && *ptr != NULL)
-		{
-			free(*ptr);
-			*ptr = NULL;
-		}
-		++ptr;
-	}
-}
-
-
 int word_counter(char *sstr)
 {
-  int count = 0;
-  while(*sstr)
-  {
-    if (*sstr == ' ' || *sstr == '\t')
-    {
-      ++sstr;
-      continue;
-    }
-    else
-    {
-      while (*sstr != ' ' || *sstr == '\t')
-      {
-        ++sstr;
-      }
-      ++count;
-    }
-  }
-  return (count);
+	int count = 0;
+
+	while (*sstr)
+	{
+		if (*sstr == ' ' || *sstr == '\t')
+		{
+			++sstr;
+			continue;
+		}
+		else
+		{
+			while (*sstr != ' ' || *sstr == '\t')
+				++sstr;
+			++count;
+		}
+	}
+	return (count);
 }
 
 char **strtow(char *str)
 {
-  int i, words, letters;
-  char *steady, **bp, *wp;
-  words = word_counter(str);
-  bp = (char **)malloc((words + 1)*sizeof(char *));
-  while(*str)
-  {
-    if (*str == ' '|| *str == '\t')
-    {
-      ++str;
-      continue;
-    }
-    else
-    {
-      letters = 1;
-      steady = str;
-      while (*steady)
-      {
-        if (*(++str) != ' ')
-        {
-          ++letters;
-          continue;
-        }
-        else
-        {
-          wp = (char *) malloc((letters + 1)*sizeof(char));
-          *bp = wp;
-          i = letters;
-          while (i)
-          {
-            *wp = *steady;
-            ++wp;
-            ++steady;
-            --i;
-          }
-          *wp = '\0';
-          ++bp;
-          break;
-        }
-      }
-    }
-  }
-  *bp = NULL;
-  bp -= words;
-  return (bp); 
-}
+	int i, words, letters;
+	char *steady, **bp, *wp;
 
-int main(void)
-{
-  char *string, **sp; 
-  int words = 0;
-  string = "   ALX  SCH ";
-  sp = strtow(string);
-  while (*sp != NULL)
-  {
-    printf("%s\n", *sp);
-    ++sp;
-    ++words;
-  }
-  sp -= words;
-  _free(sp, words);
-  return (0);
+	words = word_counter(str);
+	bp = (char **) malloc((words + 1) * sizeof(char *));
+	while (*str)
+	{
+		if (*str == ' ' || *str == '\t' || *str == ';')
+			++str;
+		else
+		{
+			steady = str;
+			letters = 1;
+			while (*steady)
+			{
+				if (*(++str) != ' ')
+					++letters;
+				else
+				{
+					wp = (char *) malloc((letters + 1)
+							* sizeof(char));
+					*bp = wp;
+					for (i = 0; i < letters; ++i)
+						wp[i] = steady[i];
+					wp[letters] = '\0';
+					++bp;
+					break;
+				}
+			}
+		}
+	}
+//	free(wp);
+	*bp = NULL;
+	bp -= words;
+	return (bp);
 }
