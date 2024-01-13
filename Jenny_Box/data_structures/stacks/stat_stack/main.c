@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 	}
 
 	command = argv[1];
-	if (argc == 3 && is(number(data)))
+	if (argc == 3 && isnumber(data))
 	{
 		data = atoi(argv[2]);
 		switch (command)

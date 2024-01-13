@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <stddef.h>
-
+#include <ctype.h>
 /**
  * stat_stack_int - Stack struct, abstracted data structure for stack
  * stack_arr: Stack Array member of Stack Struct
@@ -23,7 +23,7 @@ typedef struct stat_stack_int
  * Global Variables 
  */
 int top = -1;
-stat_stack_int stack = {[], 0};
+stat_stack_int stack = {{}, 0};
 
 /**
  * Stack OPerations
