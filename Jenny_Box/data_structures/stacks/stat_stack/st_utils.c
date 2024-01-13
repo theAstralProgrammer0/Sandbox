@@ -1,19 +1,14 @@
 #include "stack.h"
 
-void push(int x)
+int is_number(const char *string)
 {
-	if (top == CAPACITY - 1)
+	int i;
+
+	while (*string)
 	{
-		dprintf(2, "Stack overflow\n");
-		exit(1);
+		if (isdigit(*string))
+			string++;
+		return (0);
 	}
-	else
-	{
-		top++;
-		stack[top] = x;
-		dprintf(1, "%d has been pushed on top of the stack\n", x);
-		exit(0);
-	}
+	return (1);
 }
-
-
