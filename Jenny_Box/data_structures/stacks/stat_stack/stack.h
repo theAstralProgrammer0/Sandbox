@@ -26,6 +26,11 @@ int top = -1;
 stat_stack_int stack = {{}, 0};
 
 /**
+ * String Functions
+ */
+int isnumber(const char *string);
+
+/**
  * Stack OPerations
  */
 void push(int data);
