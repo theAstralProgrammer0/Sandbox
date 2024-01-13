@@ -23,7 +23,7 @@ typedef struct stat_stack_int
  * Global Variables 
  */
 int top = -1;
-stat_stack_int = {[], 0};
+stat_stack_int stack = {[], 0};
 
 /**
  * Stack OPerations

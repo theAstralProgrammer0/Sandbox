@@ -5,17 +5,16 @@ int main(int argc, char **argv)
 	char *command = NULL;
 	int data;
 
-	if (argc <= 1)
+	if (argc == 1 || argc > 3)
 	{
-		dprintf(2, "Usage: ./stack <command> [data]\n");
+		dprintf(2, "Usage: %s <command> [data]\n", argv[0]);
 		exit(EXIT_FAILURE);
 	}
 
 	command = argv[1];
-	if (argc >= 3)
+	if (argc == 3 && is(number(data)))
 	{
-		if (is
-		data = argv[2];
+		data = atoi(argv[2]);
 		switch (command)
 		{
 			case "push":
@@ -23,4 +22,8 @@ int main(int argc, char **argv)
 				break;
 			case "pop_idx":
 				pop_at_index(data);
-
+				break;
+		}
+	}
+	return (0);
+}
