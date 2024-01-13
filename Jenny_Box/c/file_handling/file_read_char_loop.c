@@ -13,7 +13,12 @@ int main(void)
 	char ch;
 	FILE *fp;
 
-	fp = fopen("xyz.txt", "r");
+	fp = fopen(NULL, "r");
+	if (fp == NULL)
+	{
+		printf("No file to read");
+		exit(1);
+	}
 
 	while (!feof(fp))
 	{

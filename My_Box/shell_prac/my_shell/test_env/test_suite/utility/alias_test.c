@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	char *(arguments[]) = {"ll=pillow"};
+	char *arguments[] = {"ll=lampholder", NULL};
 	int ret;
 
 	ret = handleAlias(arguments);

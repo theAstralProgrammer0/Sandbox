@@ -38,7 +38,7 @@ int word_counter(char *sstr)
   return (count);
 }
 
-char **strtow(char *str)
+char **strtow(char *str, char *delim)
 {
   int i, words, letters;
   char *steady, **bp, *wp;

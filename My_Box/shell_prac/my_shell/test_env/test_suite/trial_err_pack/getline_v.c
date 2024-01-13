@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include "liteshell.h"
 
 ssize_t getline_v(char **lineptr, size_t *n)
 {

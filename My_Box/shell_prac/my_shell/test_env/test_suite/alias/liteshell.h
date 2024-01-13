@@ -27,13 +27,14 @@ typedef struct alias_t
 alias_t *initAliasList();
 int addAlias(alias_t *aliasList, const char *name, const char *value);
 alias_node *findAlias(alias_t *aliasList, const char *name);
-void removeAlias(alias_t *aliasList, const char *name);
+int removeAlias(alias_t *aliasList, const char *name);
 void freeAlias(alias_node *node);
 void freeAliasList(alias_t *aliasList);
 void freeTokens(char **tokens);
 char **tokenize(const char *input_str, const char *delim);
-void printAliasList(alias_t *aliasList);
+int printAliasList(alias_t *aliasList);
 int printAlias(alias_node *, const char *);
-int handleAlias(char **arguments);
+int handleAlias(alias_t *aliasList, char **arguments);
+int handleAliasCommands(alias_t *aliasList, char *argument);
 
 #endif

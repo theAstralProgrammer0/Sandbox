@@ -2,20 +2,20 @@
 #include <stdio.h>
 #include <stddef.h>
 
-int word_counter(char *sstr)
+int word_counter(char *sstr, char delim)
 {
 	int count = 0;
 
 	while (*sstr)
 	{
-		if (*sstr == ' ' || *sstr == '\t')
+		if (*sstr == delim)
 		{
 			++sstr;
 			continue;
 		}
 		else
 		{
-			while (*sstr && *sstr != ' ' && *sstr != '\t')
+			while (*sstr && *sstr != delim)
 				++sstr;
 			++count;
 		}
@@ -23,19 +23,19 @@ int word_counter(char *sstr)
 	return (count);
 }
 
-char **strtow(char *str)
+char **strtow(char *str, char delim)
 {
 	int i, words, letters;
 	char *steady, **bp, *wp, **final;
 
-	words = word_counter(str);
+	words = word_counter(str, delim);
 	bp = (char **) malloc((words + 1) * sizeof(char *));
 	if (bp == NULL)
 		return (NULL);
 	final = bp;
 	while (*str)
 	{
-		if (*str == ' ' || *str == '\t' || *str == ';')
+		if (*str == delim)
 			++str;
 		else
 		{
@@ -43,7 +43,7 @@ char **strtow(char *str)
 			letters = 1;
 			while (*steady)
 			{
-				if (*(++str) && *str != ' ' && *str != '\t')
+				if (*(++str) && *str != delim)
 					++letters;
 				else
 				{

@@ -8,8 +8,8 @@ int main(void)
 	char *string, **sp;
 	int words = 0;
 
-	string = "   ALX  SCH ";
-	sp = strtow(string);
+	string = "alias pot per='poland is a team'";
+	sp = strtow(string, '=');
 	while (*sp)
 	{
 		printf("%s\n", *sp);
