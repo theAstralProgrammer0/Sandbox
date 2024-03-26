@@ -7,7 +7,7 @@
  * Description: Deletes left and right children of a binary tree
  *
  * @root: pointer to root of tree
- * 
+ *
  * Return: Nothing
  */
 void recur_delete(binary_tree_t *root)
@@ -48,6 +48,4 @@ void binary_tree_delete(binary_tree_t *tree)
 		recur_delete(tree);
 		free(tree);
 	}
-
-	return;
 }

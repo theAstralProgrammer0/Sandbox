@@ -16,11 +16,15 @@ int main(void)
     root->left = binary_tree_node(root, 12);
     root->right = binary_tree_node(root, 402);
     binary_tree_insert_right(root->left, 54);
-    binary_tree_insert_right(root, 128);
-    binary_tree_insert_right(root, 1900);
-    binary_tree_insert_right(root, 500);
-    binary_tree_insert_right(root, 36474);
-    binary_tree_insert_right(root, 89347);
+    binary_tree_insert_right(root->right, 128);
+    binary_tree_insert_right(root->left, 890);
+    binary_tree_insert_right(root->right, 1000);
+    binary_tree_insert_right(root->left, 2090);
+    binary_tree_insert_right(root->right, 3001);
+    binary_tree_insert_left(root->left, 657);
+    binary_tree_insert_left(root->right, 222);
+    binary_tree_insert_left(root->left, 444);
+    binary_tree_insert_left(root->right, 888);
 
     binary_tree_print(root);
 
@@ -30,5 +34,12 @@ int main(void)
     printf("Height from %d: %lu\n", root->right->n, height);
     height = binary_tree_height(root->left->right);
     printf("Height from %d: %lu\n", root->left->right->n, height);
+    height = binary_tree_height(root->right->left);
+    printf("Height from %d: %lu\n", root->right->left->n, height);
+    height = binary_tree_height(root->left->right);
+    printf("Height from %d: %lu\n", root->left->right->n, height);
+    height = binary_tree_height(NULL);
+    printf("Height from NULL root is: %lu\n", height);
+    
     return (0);
 }
