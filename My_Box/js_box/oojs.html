@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Object-oriented JavaScript example</title>
+  </head>
+
+  <body>
+    <p>This example requires you to enter commands in your browser's JavaScript console (see <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">What are browser developer tools</a> for more information).</p>
+    
+    <script>
+	    class Person {
+		    name;
+		    age;
+
+		    constructor(name, age){
+			    this.name = name;
+			    this.age = age;
+		    };
+		    introSelf() {
+			    console.log(`Hi! I'm ${this.name}. I'm ${this.age} years old.`);
+		    }
+	    };
+	    class Professor extends Person{
+		    teaches;
+
+		    constructor(name, age, teaches){
+			    super(name, age);
+			    this.teaches = teaches;
+		    };
+		    introSelf() {
+			    console.log(`Hi! I'm Professor ${this.name}, I'm ${this.age} of age, and I teach ${this.teaches}`);
+		    };
+		    grade(paper) {
+			    const grad = Math.floor(Math.random() * (5 - 1) + 1);
+			    console.log(grad);
+		    };
+	    };
+	    class Student extends Person {
+		    #year;
+		    #dept;
+
+		    constructor(name, age, year, dept) {
+			    super(name, age);
+			    this.#year = year;
+			    this.#dept = dept;
+		    };
+		    introSelf() {
+			    console.log(`Hi! I'm ${this.name}, I'm ${this.age} years old in year ${this.#year} studying ${this.#dept}`);
+		    };
+		    #gpa() {
+			    return (Math.random(2,5));
+		    };
+		    logGpa() {
+			    console.log(this.#gpa());
+		    };
+		    canStudyArchery() {
+			    return (this.#year > 1);
+		    };
+	    };
+	const sonia = new Student('Sonia', 17, 2, 'Computer Graphics');
+	console.log(sonia.name);
+	console.log(sonia.canStudyArchery());
+	sonia.year = 3;
+	console.log(sonia.year);
+	sonia.age = 24;
+	console.log(sonia.age);
+	sonia.#gpa();
+
+	
+
+    </script>
+  </body>
+
+</html>

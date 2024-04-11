@@ -124,7 +124,6 @@ map\n")
         if c_map:
             c_map = [row.__str__() for row in c_map]
             self.string = "\n".join(c_map)
-            print()
             print(self.string)
             print()
         else:
