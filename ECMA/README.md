@@ -1,2 +1,0 @@
-# ECMA Script Sandbox Files
-

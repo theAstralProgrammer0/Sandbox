@@ -1,2 +1,0 @@
-# TypeScript
-- Taught By Mosh
