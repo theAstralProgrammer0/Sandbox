@@ -20,26 +20,15 @@ The main goals of this repository are:
 The repository is organized into the following directories:
 
 ```plaintext
-sandbox/
-├── backtracking/
-│   ├── permutations/
-│   └── combinations/
-├── data_structures/
-│   ├── arrays/
-│   ├── linked_lists/
-│   ├── stacks/
-│   └── queues/
-├── dynamic_programming/
-│   ├── knapsack/
-│   └── fibonacci/
-├── projects/
-│   ├── cli_calculator/
-│   └── tic_tac_toe/
-├── sorting/
-│   ├── quicksort/
-│   └── mergesort/
-├── misc/
-│   └── utilities/
+Sandbox/
+├── ECMA/
+├── Jenny_Box/
+├── My_Box/
+├── Neso_Box/
+├── TypeScript/
+├── alx-higher_level_programming/
+├── cmd/
+├── simple_shell/
 └── README.md
 ```
 
