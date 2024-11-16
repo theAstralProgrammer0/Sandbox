@@ -1,3 +1,6 @@
+Here’s the modified `README.md` for your **Sandbox** repository with the updated structure:
+
+```markdown
 # 🏖️ Sandbox: Coding Practice and Examples
 
 Welcome to the **Sandbox Repository**! This is a comprehensive collection of my coding exercises, algorithm implementations, and small project examples. The purpose of this repository is to provide a playground for experimenting, refining problem-solving skills, and documenting my coding journey.
@@ -20,7 +23,7 @@ The main goals of this repository are:
 The repository is organized into the following directories:
 
 ```plaintext
-Sandbox/
+sandbox/
 ├── ECMA/
 ├── Jenny_Box/
 ├── My_Box/
@@ -33,12 +36,14 @@ Sandbox/
 ```
 
 ### Key Directories:
-- **`backtracking/`**: Contains problems solved using backtracking algorithms, such as permutations and combinations.
-- **`data_structures/`**: Implementations of core data structures with usage examples.
-- **`dynamic_programming/`**: Solutions to popular dynamic programming problems like the knapsack problem.
-- **`projects/`**: Small-scale projects for experimenting with new ideas or technologies.
-- **`sorting/`**: Implementations of various sorting algorithms with complexity analysis.
-- **`misc/`**: A collection of miscellaneous scripts and utilities.
+- **`ECMA/`**: Contains JavaScript and ECMA-related code examples and exercises.
+- **`Jenny_Box/`**: A collection of personal projects and code related to the "Jenny" series (if applicable).
+- **`My_Box/`**: A space for personal, experimental coding challenges or private projects.
+- **`Neso_Box/`**: Code and tutorials following the Neso Academy curriculum or related resources.
+- **`TypeScript/`**: Examples and exercises focused on TypeScript, including best practices and learning materials.
+- **`alx-higher_level_programming/`**: Contains exercises and project solutions related to the ALX Software Engineering program.
+- **`cmd/`**: Command-line tools and scripts written for various purposes.
+- **`simple_shell/`**: A simple shell project, often used to understand how a basic shell functions in a Unix-like environment.
 
 ## 📖 Usage Instructions
 
@@ -52,12 +57,12 @@ To explore and run any of the code examples, follow these steps:
 
 2. **Navigate to a Specific Directory**:
    ```bash
-   cd backtracking/permutations/
+   cd ECMA/
    ```
 
-3. **Run a Python Script**:
+3. **Run a Python Script or Command**:
    ```bash
-   python permutations.py
+   python example_script.py
    ```
 
 ## ✨ Unique Features
@@ -85,5 +90,3 @@ This repository is licensed under the MIT License. Feel free to use the code for
 For questions, suggestions, or feedback, feel free to reach out via [GitHub Issues](https://github.com/yourusername/sandbox/issues) or start a discussion in the repository.
 
 Happy coding and exploring! 🚀
-```
-
