@@ -1,4 +1,4 @@
-# 💻 My_Box: The Personal Sandbox of [https://github.com/theAstralProgrammer0](TheAstralProgrammer0)
+# 💻 My_Box: The Personal Sandbox of (theAstralProgrammer0) [https://github.com/theAstralProgrammer0]
 
 Welcome to **My_Box**, my personal sandbox where I embark on a journey through
 the vast landscape of programming languages and paradigms. This directory is a
