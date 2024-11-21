@@ -1,7 +1,3 @@
-Here’s a sample **README** file for the backtracking category of your **100 Algorithms Challenge**:
-
----
-
 # **Backtracking Algorithms Challenge**
 
 Welcome to the **Backtracking Algorithms** category of the **100 Algorithms Challenge**! This section is designed to help you master the powerful backtracking technique, which is often used to explore all possible solutions to a problem efficiently by pruning invalid or unnecessary paths.
