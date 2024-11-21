@@ -1,5 +1,3 @@
-Here’s the modified `README.md` for your **Sandbox** repository with the updated structure:
-
 # 🏖️ Sandbox: Coding Practice and Examples
 
 Welcome to the **Sandbox Repository**! This is a comprehensive collection of my coding exercises, algorithm implementations, and small project examples. The purpose of this repository is to provide a playground for experimenting, refining problem-solving skills, and documenting my coding journey.
