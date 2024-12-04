@@ -1,0 +1,27 @@
+[
+    { "string1": "abcde", "string2": "abcde", "expected": "abcde" },
+    { "string1": "abc", "string2": "def", "expected": "" },
+    { "string1": "abc", "string2": "a", "expected": "a" },
+    { "string1": "abcdef", "string2": "acf", "expected": "acf" },
+    { "string1": "AGGTAB", "string2": "GXTXAYB", "expected": "GTAB" },
+    { "string1": "abcdxyz", "string2": "xyzabcd", "expected": "abcd" },
+    { "string1": "aaaa", "string2": "aa", "expected": "aa" },
+    { "string1": "", "string2": "abc", "expected": "" },
+    { "string1": "a", "string2": "a", "expected": "a" },
+    { "string1": "a", "string2": "b", "expected": "" },
+    { "string1": "longest", "string2": "stone", "expected": "one" },
+    { "string1": "programming", "string2": "gaming", "expected": "gaming" },
+    { "string1": "subsequence", "string2": "sequence", "expected": "sequence" },
+    { "string1": "testing", "string2": "nesting", "expected": "esting" },
+    { "string1": "algorithm", "string2": "logarithm", "expected": "lorithm" },
+    { "string1": "python", "string2": "typhoon", "expected": "thon" },
+    { "string1": "datastructure", "string2": "structuredata", "expected": "structure" },
+    { "string1": "machinelearning", "string2": "learningmachine", "expected": "learning" },
+    { "string1": "framework", "string2": "network", "expected": "ework" },
+    { "string1": "development", "string2": "deployment", "expected": "deloment" },
+    { "string1": "openai", "string2": "ai", "expected": "ai" },
+    { "string1": "supercalifragilisticexpialidocious", "string2": "fragilistic", "expected": "fragilistic" },
+    { "string1": "abracadabra", "string2": "cadabra", "expected": "cadabra" },
+    { "string1": "mississippi", "string2": "sip", "expected": "sip" }
+]
+
