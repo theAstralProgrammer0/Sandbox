@@ -2,7 +2,7 @@ from typing import List
 
 
 class Solution:
-    def setup_board(self, n: int) -> List[List[int]]:
+    def setup_board(self, n) -> List[List[int]]:
         return [[0 for _ in range(n)] for _ in range(n)]
 
     def is_safe(self, board: List[List[int]], row: int, col: int, n: int, solutions: List[List[int]]) -> bool:
